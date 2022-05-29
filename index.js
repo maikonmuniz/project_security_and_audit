@@ -3,7 +3,6 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const app = express()
 
-
 // config json response
 app.use(express.json())
 
@@ -23,4 +22,8 @@ app.use(express.static('public'))
 const userRoutes = require('./routes/userRoutes')
 app.use('/users', userRoutes)
 
+const certificadoRoutes = require('./routes/certificadoRoutes')
+app.use('/certificado', certificadoRoutes)
+
+console.log("ROdano essa porra")
 app.listen(process.env.PORT || 5000)
