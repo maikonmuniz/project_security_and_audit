@@ -1,16 +1,14 @@
 const router = require('express').Router()
-const { body } = require('express-validator');
+
 const UserController = require('../controllers/UserController')
-const verifyToken = require("../helpers/verify-token")
-const { imageUpload } = require("../helpers/image-upload")
+// const verifyToken = require("../helpers/verify-token")
+
 
 router.post('/register', UserController.register)
 
-router.put('/location/:id', UserController.location)
-router.post('/login', UserController.login)
-router.get('/checkuser', UserController.checkUser)
-router.get('/:id', UserController.getUserById)
-router.patch('/edit/:id', verifyToken, imageUpload.single("image"), UserController.editUser)
+router.post('/login',  UserController.login)
+// router.get('/:id', UserController.getUserById)
+// router.patch('/edit/:id', verifyToken,  UserController.editUser)
 
-
+// upload.single("file"),
 module.exports = router
