@@ -1,0 +1,19 @@
+{
+  "name": "project_security_and_audit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maikonmuniz/project_security_and_audit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maikonmuniz/project_security_and_audit/issues"
+  },
+  "homepage": "https://github.com/maikonmuniz/project_security_and_audit#readme"
+}
